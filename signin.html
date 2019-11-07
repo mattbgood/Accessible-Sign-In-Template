@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Sample Page | Sign In</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Matt Bishop">
+  <meta name="description" content="sign in sample webpage">
+  <meta name="keywords" content="sugn in, html, css, javascript, aria, accessibility, ada, section 508, wcag">
+  <link rel="stylesheet" type="text/css" href="signinstyles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <img class="logo" src="logo.png" alt="Sprocket Design Logo">
+  </header>
+  <main>
+    <h1>Sign In</h1>
+    <form action="">
+      <fieldset>
+        <label for="username">Username: <span class="fa fa-asterisk"</span></label>
+       <input type="username" aria-required="true" pattern="[A-Za-z0-9]+" name="username" id="username"><br>
+        <label for="password">Password: <span class="fa fa-asterisk"</span></label>
+        <input type="password" aria-required="true" pattern="[A-Za-z0-9]+" minlength="8" maxlength="15" name="password" id="password"
+        <button id="loginbutton" type="submit">Log In</button>
+      </fieldset>
+    </form>
+    <div class="registerwrap">
+    <p id="question">Not a member? </p>
+      <a href="#">Register</a>
+    </div>
+  </main>
+  <footer>
+    <p id="footercontent">&copy; 2019 All Rights Reserved</p>
+  </footer>
+</body>
+</html>
